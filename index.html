@@ -89,10 +89,22 @@
       </header>
 
       <main id="main">
-        <section class="hero section">
+        <section class="hero section section-panel section-panel-hero">
+          <figure class="hero-poster">
+            <img
+              src="assets/images/hero-poster.webp"
+              alt="Poster-style Piecebreaker composite built from the current development build and in-game item art"
+              width="1600"
+              height="960"
+            >
+          </figure>
+
           <div class="hero-copy">
             <p class="eyebrow">Independent game studio</p>
-            <h1>Tab Six Studios</h1>
+            <h1 class="hero-title">
+              <span>Tab Six</span>
+              <span>Studios</span>
+            </h1>
             <p class="hero-lede">
               Tab Six Studios is an independent game studio developing
               <strong>Piecebreaker</strong>, a chess-inspired roguelike currently
@@ -122,35 +134,6 @@
               <li>Chess-inspired roguelike</li>
               <li>Business and collaboration inquiries welcome</li>
             </ul>
-          </div>
-
-          <div class="hero-media" aria-label="Current Piecebreaker development screens">
-            <figure class="media-card media-card-large">
-              <img
-                src="assets/images/piecebreaker-battle.webp"
-                alt="Piecebreaker battle screen from the current development build"
-                width="1600"
-                height="900"
-              >
-            </figure>
-            <div class="media-stack">
-              <figure class="media-card">
-                <img
-                  src="assets/images/piecebreaker-map.webp"
-                  alt="Piecebreaker route map screen from the current development build"
-                  width="1600"
-                  height="900"
-                >
-              </figure>
-              <figure class="media-card">
-                <img
-                  src="assets/images/piecebreaker-reward.webp"
-                  alt="Piecebreaker post-combat reward screen from the current development build"
-                  width="1600"
-                  height="900"
-                >
-              </figure>
-            </div>
           </div>
         </section>
 
@@ -192,56 +175,69 @@
               <li>Piece items and relic rewards that change how a roster develops over a run.</li>
             </ul>
           </div>
+          <figure class="systems-proof">
+            <img
+              src="assets/images/piecebreaker-systems-proof.webp"
+              alt="Composite image showing route planning, board combat, and reward selection in Piecebreaker"
+              width="1600"
+              height="920"
+              loading="lazy"
+            >
+            <figcaption>
+              Routing, tactical board states, and buildcraft choices all sit inside
+              the same run structure.
+            </figcaption>
+          </figure>
         </section>
 
         <section class="section section-panel" id="gallery">
           <div class="section-heading">
             <p class="eyebrow">Gallery</p>
-            <h2>Current development screens.</h2>
+            <h2>Curated development stills.</h2>
           </div>
           <div class="gallery-grid">
-            <figure class="gallery-card">
+            <figure class="gallery-card gallery-card-primary">
               <img
-                src="assets/images/piecebreaker-map.webp"
-                alt="Piecebreaker route map view"
-                width="1600"
+                src="assets/images/gallery-reward-buildcraft.webp"
+                alt="Curated Piecebreaker reward image centered on post-combat buildcraft choices"
+                width="1440"
                 height="900"
                 loading="lazy"
               >
-              <figcaption>Run map and route surface</figcaption>
+              <figcaption>Reward surfaces that foreground items, relics, and buildcraft.</figcaption>
             </figure>
 
             <figure class="gallery-card">
               <img
-                src="assets/images/piecebreaker-deploy.webp"
-                alt="Piecebreaker deploy screen"
-                width="1600"
+                src="assets/images/gallery-battle-tension.webp"
+                alt="Curated Piecebreaker battle image focused on a tense board state"
+                width="1440"
                 height="900"
                 loading="lazy"
               >
-              <figcaption>Pre-combat deployment</figcaption>
+              <figcaption>Tense board states with positional pressure at a glance.</figcaption>
             </figure>
 
             <figure class="gallery-card">
               <img
-                src="assets/images/piecebreaker-battle.webp"
-                alt="Piecebreaker battle screen"
-                width="1600"
+                src="assets/images/gallery-route-cluster.webp"
+                alt="Curated Piecebreaker route image showing a decision cluster and node selection"
+                width="1440"
                 height="900"
                 loading="lazy"
               >
-              <figcaption>Board-based combat</figcaption>
+              <figcaption>Route clusters, node choices, and run-shaping decisions.</figcaption>
             </figure>
 
-            <figure class="gallery-card">
+            <figure class="gallery-card gallery-card-wide">
               <img
-                src="assets/images/piecebreaker-reward.webp"
-                alt="Piecebreaker reward screen"
-                width="1600"
+                src="assets/images/gallery-arsenal-composite.webp"
+                alt="Art-led composite using Piecebreaker item and trinket artwork"
+                width="1440"
                 height="900"
                 loading="lazy"
               >
-              <figcaption>Post-combat reward flow</figcaption>
+              <figcaption>Piece, item, and trinket language pulled forward as promo art.</figcaption>
             </figure>
           </div>
         </section>

@@ -56,26 +56,32 @@ Recommended workflow:
 2. Preview locally
 3. Commit and push to `main`
 
-## Swapping Screenshots
+## Updating Media
 
-Current gallery files:
+The site now uses a small poster family rather than a raw screenshot grid.
 
-- `assets/images/piecebreaker-map.webp`
-- `assets/images/piecebreaker-deploy.webp`
-- `assets/images/piecebreaker-battle.webp`
-- `assets/images/piecebreaker-reward.webp`
+Current media files:
 
-To replace them:
+- `assets/images/hero-poster.webp`
+- `assets/images/piecebreaker-systems-proof.webp`
+- `assets/images/gallery-battle-tension.webp`
+- `assets/images/gallery-route-cluster.webp`
+- `assets/images/gallery-reward-buildcraft.webp`
+- `assets/images/gallery-arsenal-composite.webp`
 
-1. Export new screens at roughly `1600x900` or larger
-2. Keep the same filenames if you want to avoid editing HTML
-3. Prefer clean UI states over quantity
-4. Avoid outdated branding or obviously unfinished debug-only captures
-5. If you add new screenshots, update the `<img>` tags and captions in
-   `index.html`
+These are derived from:
 
-The current screenshot set was exported from the local development build rather
-than copied from the outdated Steam art.
+- current local build captures
+- shared frame art in `godot/art/shared/*.png`
+- selected item and trinket art from the game repo
+
+When replacing media later:
+
+1. Start with current-build captures, not outdated storefront images
+2. Prefer poster-style composites or tight editorial crops over uncured full-screen grabs
+3. Keep the hero image legible behind page copy
+4. Keep the gallery varied by subject: tactics, route planning, rewards, and art language
+5. Update the `<img>` tags and captions in `index.html` if filenames change
 
 ## Icons And Social Preview
 
@@ -173,8 +179,10 @@ Notes:
   it feels specific to Piecebreaker instead of generic studio boilerplate
 - Large typography and generous spacing make the studio feel deliberate and
   professional without sounding inflated
-- Real current-build screenshots do most of the credibility work, which is more
-  trustworthy than invented marketing copy
+- The top of the page now uses a single poster-style composite so the first
+  impression feels intentional rather than like a stack of dev captures
+- Curated composites mix truthful current-build imagery with real in-game art so
+  the site feels more like a premium teaser and less like a screenshot archive
 - The structure stays small so future upkeep is easy and stale sections do not
   accumulate
 
@@ -183,9 +191,12 @@ Notes:
 - The favicon and brand mark come from the current game app icon
 - Headline typography uses the local `Cinzel` and `Crimson Pro` fonts already
   present in the game repo
-- Gallery images were selected from fresh runtime captures of the current build:
-  map, deploy, battle, and reward
-- Outdated Steam storefront assets were intentionally not used
+- The hero poster and systems-proof image are rebuilt from fresh current-build
+  captures plus the game's shared frame language and selected item/trinket art
+- The gallery intentionally mixes editorial gameplay crops with one art-led
+  composite so the page can show both mechanics and visual identity
+- Outdated Steam storefront assets and anything with the old project branding
+  were intentionally not used verbatim
 
 ## Intentional Omissions
 
