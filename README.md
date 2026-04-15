@@ -4,7 +4,7 @@ Small static studio site for **Tab Six Studios** and **Piecebreaker**.
 
 The goal is credibility, clarity, and low maintenance while Piecebreaker is in
 active development. This is intentionally a narrow, professional placeholder
-site rather than a large marketing site.
+site with a "coming soon" posture rather than a large marketing site.
 
 ## Stack
 
@@ -47,7 +47,7 @@ site rather than a large marketing site.
 - The most likely sections to update later are:
   - hero text
   - studio paragraph
-  - Piecebreaker summary and bullets
+  - Piecebreaker summary and status card
   - contact details
 
 Recommended workflow:
@@ -58,26 +58,21 @@ Recommended workflow:
 
 ## Updating Media
 
-The site now uses a small poster family rather than a raw screenshot grid.
+The live site now avoids gameplay screenshots and image-led backgrounds.
 
 Current live media files:
 
-- `assets/images/hero-poster.webp`
-- `assets/images/piecebreaker-systems-proof.webp`
 - `assets/images/og-piecebreaker-site.png`
 
-These are derived from:
-
-- current local build captures
-- shared frame art in `godot/art/shared/*.png`
-- selected item and trinket art from the game repo
+Exploratory image assets from earlier passes still remain in `assets/images/`,
+but they are not referenced by the live page.
 
 When replacing media later:
 
-1. Start with current-build captures, not outdated storefront images
-2. Prefer poster-style composites or tight editorial crops over uncured full-screen grabs
-3. Keep the hero image legible behind page copy
-4. Update the `<img>` tags in `index.html` if filenames change
+1. Only add imagery when it genuinely improves the page
+2. Prefer a small number of strong, intentional assets over a larger gallery
+3. Keep the live page readable and current rather than turning it into a half-finished pitch
+4. Update `index.html`, `404.html`, and any OG references if filenames change
 
 ## Icons And Social Preview
 
@@ -175,12 +170,12 @@ Notes:
   it feels specific to Piecebreaker instead of generic studio boilerplate
 - Large typography and generous spacing make the studio feel deliberate and
   professional without sounding inflated
-- The hero now leads with `Piecebreaker` instead of the studio name so visitors
-  remember the game first while the studio still reads as credible support
-- The top of the page now uses a single poster-style composite so the first
-  impression feels intentional rather than like a stack of dev captures
-- The page stays tighter without a standalone gallery section, which helps keep
-  the site from feeling like a dump of half-ready promo images
+- The page is now intentionally text-led so it can feel polished without
+  leaning on half-ready promotional art
+- The current tone is "coming soon" rather than a hard game pitch, which makes
+  the site more honest at this stage of development
+- The hero uses abstract CSS atmosphere instead of screenshot backgrounds, which
+  keeps the site cleaner and more durable while public materials are still sparse
 - The structure stays small so future upkeep is easy and stale sections do not
   accumulate
 
@@ -189,10 +184,10 @@ Notes:
 - The favicon and brand mark come from the current game app icon
 - Headline typography uses the local `Cinzel` and `Crimson Pro` fonts already
   present in the game repo
-- The hero poster and systems-proof image are rebuilt from fresh current-build
-  captures plus the game's shared frame language and selected item/trinket art
-- The live site currently uses only the hero poster and systems-proof composite;
-  other exploratory assets remain in `assets/images/` for possible future use
+- The live Open Graph card is now a text-only social image so external previews
+  match the quieter direction of the site
+- Earlier exploratory hero and gameplay composites remain in `assets/images/`
+  for possible future use, but they are no longer part of the live page
 - Outdated Steam storefront assets and anything with the old project branding
   were intentionally not used verbatim
 
