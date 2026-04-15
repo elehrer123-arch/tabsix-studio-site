@@ -60,14 +60,11 @@ Recommended workflow:
 
 The site now uses a small poster family rather than a raw screenshot grid.
 
-Current media files:
+Current live media files:
 
 - `assets/images/hero-poster.webp`
 - `assets/images/piecebreaker-systems-proof.webp`
-- `assets/images/gallery-battle-tension.webp`
-- `assets/images/gallery-route-cluster.webp`
-- `assets/images/gallery-reward-buildcraft.webp`
-- `assets/images/gallery-arsenal-composite.webp`
+- `assets/images/og-piecebreaker-site.png`
 
 These are derived from:
 
@@ -80,8 +77,7 @@ When replacing media later:
 1. Start with current-build captures, not outdated storefront images
 2. Prefer poster-style composites or tight editorial crops over uncured full-screen grabs
 3. Keep the hero image legible behind page copy
-4. Keep the gallery varied by subject: tactics, route planning, rewards, and art language
-5. Update the `<img>` tags and captions in `index.html` if filenames change
+4. Update the `<img>` tags in `index.html` if filenames change
 
 ## Icons And Social Preview
 
@@ -183,8 +179,8 @@ Notes:
   remember the game first while the studio still reads as credible support
 - The top of the page now uses a single poster-style composite so the first
   impression feels intentional rather than like a stack of dev captures
-- Curated composites mix truthful current-build imagery with real in-game art so
-  the site feels more like a premium teaser and less like a screenshot archive
+- The page stays tighter without a standalone gallery section, which helps keep
+  the site from feeling like a dump of half-ready promo images
 - The structure stays small so future upkeep is easy and stale sections do not
   accumulate
 
@@ -195,11 +191,8 @@ Notes:
   present in the game repo
 - The hero poster and systems-proof image are rebuilt from fresh current-build
   captures plus the game's shared frame language and selected item/trinket art
-- The battle still was rebuilt as a truer gameplay-led screen crop so the
-  gallery keeps at least one image that reads like live play rather than promo
-  collage
-- The gallery intentionally mixes editorial gameplay crops with one art-led
-  composite so the page can show both mechanics and visual identity
+- The live site currently uses only the hero poster and systems-proof composite;
+  other exploratory assets remain in `assets/images/` for possible future use
 - Outdated Steam storefront assets and anything with the old project branding
   were intentionally not used verbatim
 

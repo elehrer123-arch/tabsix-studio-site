@@ -376,29 +376,12 @@ h3 {
   font-size: 0.95rem;
 }
 
-.media-card,
-.gallery-card,
 .contact-card {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   background: var(--panel-strong);
   box-shadow: var(--shadow);
-}
-
-.media-card::after,
-.gallery-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 24%);
-}
-
-.gallery-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .section-heading {
@@ -482,35 +465,6 @@ h3 {
   padding: 1.05rem 1.2rem 1.2rem;
   color: var(--muted);
   font-size: 0.98rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.gallery-card {
-  position: relative;
-}
-
-.gallery-card figcaption {
-  padding: 1rem 1.15rem 1.15rem;
-  color: var(--muted);
-  font-size: 0.97rem;
-}
-
-.gallery-card-primary {
-  grid-column: span 2;
-}
-
-.gallery-card-wide {
-  grid-column: span 2;
-}
-
-.gallery-card-wide img,
-.gallery-card-primary img {
-  aspect-ratio: 16 / 9;
 }
 
 .contact-card {
@@ -636,10 +590,6 @@ h3 {
     padding: 2rem 1.2rem;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero {
     min-height: 38rem;
     padding-top: 3rem;
@@ -663,14 +613,6 @@ h3 {
     background:
       linear-gradient(180deg, rgba(7, 11, 18, 0.52) 0%, rgba(7, 11, 18, 0.42) 34%, rgba(7, 11, 18, 0.9) 100%),
       linear-gradient(180deg, rgba(7, 11, 18, 0.12), rgba(7, 11, 18, 0.54));
-  }
-
-  .gallery-card-primary {
-    grid-column: auto;
-  }
-
-  .gallery-card-wide {
-    grid-column: auto;
   }
 
   .button-row {
