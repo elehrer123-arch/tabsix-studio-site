@@ -179,6 +179,8 @@ Notes:
   it feels specific to Piecebreaker instead of generic studio boilerplate
 - Large typography and generous spacing make the studio feel deliberate and
   professional without sounding inflated
+- The hero now leads with `Piecebreaker` instead of the studio name so visitors
+  remember the game first while the studio still reads as credible support
 - The top of the page now uses a single poster-style composite so the first
   impression feels intentional rather than like a stack of dev captures
 - Curated composites mix truthful current-build imagery with real in-game art so
@@ -193,6 +195,9 @@ Notes:
   present in the game repo
 - The hero poster and systems-proof image are rebuilt from fresh current-build
   captures plus the game's shared frame language and selected item/trinket art
+- The battle still was rebuilt as a truer gameplay-led screen crop so the
+  gallery keeps at least one image that reads like live play rather than promo
+  collage
 - The gallery intentionally mixes editorial gameplay crops with one art-led
   composite so the page can show both mechanics and visual identity
 - Outdated Steam storefront assets and anything with the old project branding

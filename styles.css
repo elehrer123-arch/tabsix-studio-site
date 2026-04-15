@@ -232,18 +232,18 @@ h3,
   inset: 0;
   z-index: 0;
   background:
-    linear-gradient(90deg, rgba(7, 11, 18, 0.92) 0%, rgba(7, 11, 18, 0.78) 28%, rgba(7, 11, 18, 0.28) 56%, rgba(7, 11, 18, 0.72) 100%),
+    linear-gradient(90deg, rgba(7, 11, 18, 0.92) 0%, rgba(7, 11, 18, 0.74) 30%, rgba(7, 11, 18, 0.22) 58%, rgba(7, 11, 18, 0.66) 100%),
     linear-gradient(180deg, rgba(7, 11, 18, 0.18), rgba(7, 11, 18, 0.58));
 }
 
 .hero-copy {
   position: relative;
   z-index: 2;
-  max-width: 39rem;
+  max-width: 32rem;
 }
 
-.hero-title span {
-  display: block;
+.hero-title {
+  letter-spacing: 0.02em;
 }
 
 .hero-poster {
@@ -291,6 +291,7 @@ h3 {
 }
 
 .hero-lede,
+.hero-subhead,
 .hero-note,
 .section-body p,
 .game-summary,
@@ -300,13 +301,21 @@ h3 {
 }
 
 .hero-lede {
-  margin: 1.35rem 0 0;
-  font-size: 1.32rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.16rem;
+}
+
+.hero-subhead {
+  margin: 0.95rem 0 0;
+  max-width: 23rem;
+  color: var(--text);
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  line-height: 1.2;
 }
 
 .hero-note {
   margin: 1rem 0 0;
-  max-width: 34rem;
+  max-width: 30rem;
 }
 
 .button-row {
@@ -599,7 +608,7 @@ h3 {
   }
 
   .hero-copy {
-    max-width: none;
+    max-width: 32rem;
   }
 }
 
@@ -637,17 +646,22 @@ h3 {
   }
 
   .hero-title {
-    font-size: clamp(2.7rem, 15vw, 4.25rem);
+    font-size: clamp(2.35rem, 10.5vw, 3.9rem);
     line-height: 0.94;
   }
 
+  .hero-subhead {
+    font-size: 1.2rem;
+    max-width: 16rem;
+  }
+
   .hero-lede {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .section-panel-hero::after {
     background:
-      linear-gradient(180deg, rgba(7, 11, 18, 0.58) 0%, rgba(7, 11, 18, 0.46) 34%, rgba(7, 11, 18, 0.9) 100%),
+      linear-gradient(180deg, rgba(7, 11, 18, 0.52) 0%, rgba(7, 11, 18, 0.42) 34%, rgba(7, 11, 18, 0.9) 100%),
       linear-gradient(180deg, rgba(7, 11, 18, 0.12), rgba(7, 11, 18, 0.54));
   }
 
